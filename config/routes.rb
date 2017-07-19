@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :books do
+  resources :books, only: [:index] do
     collection do
       get 'selected'
       get 'our_collection'

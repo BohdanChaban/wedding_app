@@ -30,6 +30,7 @@
           <td><%= book.publishing_house %></td>
           <td><%= button_to 'Обрати книгу', choose_path(book_id: book.id),
                             method: :post, remote: true,
+                            data: { confirm: 'Ви впевнені, що хочете обрати саме цю книгу?' },
                             class: "btn btn-success btn-choose" %></td>
 
         </tr>
