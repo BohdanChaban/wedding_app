@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="wedding_development@localhost" uuid="5781b65f-dca1-4e0f-a59c-445822316451">
+      <database-info product="PostgreSQL" version="9.3.17" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4.1212">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>wedding_app</user-name>
+      <introspection-schemas>wedding_development:public</introspection-schemas>
+    </data-source>
+  </component>
+</project>

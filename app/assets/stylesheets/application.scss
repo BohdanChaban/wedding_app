@@ -1,0 +1,86 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.home_cover {
+  height: 100%;
+  width: 100%;
+  background: asset-url('wed.jpg') no-repeat center;
+  background-size: contain;
+  background-color: #379f1366;
+}
+
+.header {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #FFF;
+  background-color: #379f1366;
+  height: 110px;
+  padding: 15px;
+  h1 {
+    display: inline-block;
+  }
+}
+
+.main {
+  color: #227a1a;
+  background-color: #FFF;
+  padding: 15px;
+  min-height: calc(100% - 180px);
+}
+
+.footer {
+  color: #FFF;
+  background-color: #379f1366;
+  height: 70px;
+  padding: 25px;
+  font-size: 16px;
+  text-align: right;
+}
+
+.header-link {
+  color: #FFF;
+  &:hover {
+    color: #FFF;
+  }
+}
+
+.btn-right {
+  margin: 20px 0 0 40px;
+  padding: 7px 20px;
+  min-width: 180px;
+}
+
+.btn-choose {
+  padding: 5px 15px;
+}
+
+#notice {
+  text-align: center;
+  padding: 10px;
+  border: 0 solid;
+  border-radius: 10px;
+}
+
+//.btn-custom {
+//  background-color: #379f1366;
+//  color: white;
+//}
+//
+//.btn-custom:hover {
+//  background-color: #379f1366;
+//  color: white;
+//}
+
+.btn-inline, .inline {
+  display: inline-block;
+}
+
+.right {
+  float: right;
+}
