@@ -1,0 +1,23 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 5
+
+development:
+  <<: *default
+  database: wedding_development
+  username: wedding_app
+  password: 12345678
+
+production:
+  <<: *default
+  database: wedding_production
+  username: wedding_app
+  password: 12345678
