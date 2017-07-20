@@ -57,3 +57,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'rails_admin', '~> 1.2'
+gem 'rails_admin_import', '~> 2.0'
+gem 'erubis'

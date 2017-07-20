@@ -4,15 +4,36 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index
-    @books = Book.wanted
+    case params[:sort]
+      when 'name'
+        @books = Book.wanted.order('books.name ASC')
+      when 'publ'
+        @books = Book.wanted.order('books.publishing_house ASC')
+      else
+        @books = Book.wanted.order('books.author ASC')
+    end
   end
 
   def selected
-    @books = Book.selected
+    case params[:sort]
+      when 'name'
+        @books = Book.selected.order('books.name ASC')
+      when 'publ'
+        @books = Book.selected.order('books.publishing_house ASC')
+      else
+        @books = Book.selected.order('books.author ASC')
+    end
   end
 
   def our_collection
-    @books = Book.available
+    case params[:sort]
+      when 'name'
+        @books = Book.available.order('books.name ASC')
+      when 'publ'
+        @books = Book.available.order('books.publishing_house ASC')
+      else
+        @books = Book.available.order('books.author ASC')
+    end
   end
 
   def choose
