@@ -89,6 +89,17 @@ body, html {
   color: #227a1a;
 }
 
+.sort_link:after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: asset-url('sort.png') no-repeat center;
+  background-size: contain;
+  position: relative;
+  top: 8px;
+  display: inline-block;
+}
+
 .sort_link:hover {
   color: #1b5f14;
 }
