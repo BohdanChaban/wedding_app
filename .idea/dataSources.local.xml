@@ -10,5 +10,11 @@
       <user-name>wedding_app</user-name>
       <introspection-schemas>wedding_development:public</introspection-schemas>
     </data-source>
+    <data-source name="wedding_production@chaban-wedding.herokuapp.com" uuid="7b8a4338-93ac-477e-a5bb-7b744a5747d9">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>wedding_app</user-name>
+    </data-source>
   </component>
 </project>

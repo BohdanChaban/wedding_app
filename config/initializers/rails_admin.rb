@@ -47,6 +47,7 @@ RailsAdmin.config do |config|
       field :author
       field :publishing_house
       field :status
+      field :updated_at
     end
 
     edit do

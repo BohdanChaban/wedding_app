@@ -7,5 +7,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/wedding_development</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="wedding_production@chaban-wedding.herokuapp.com" uuid="7b8a4338-93ac-477e-a5bb-7b744a5747d9">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://chaban-wedding.herokuapp.com:5432/wedding_production</jdbc-url>
+    </data-source>
   </component>
 </project>
